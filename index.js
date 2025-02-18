@@ -1,16 +1,20 @@
+// choice from computer
 function getcomputerChoice(){
     let randomIndex = ["rock","paper","scissors"]
     let mikey= Math.floor(Math.random()*randomIndex.length)
     return randomIndex[mikey];
 }
-
+// choices from user
 function gethumanChoice(){
    let humanChoice = prompt("what do you want to choose??").toLowerCase();
    return humanChoice;
 }
+// setting results from computer and human choices to zero
 
 let humanScore = 0;
 let computerScore = 0;
+
+// obtaining the result between the computer and human
 
 function playRound(humanChoice,computerChoice){
     
@@ -26,7 +30,7 @@ function playRound(humanChoice,computerChoice){
     }
 }
 
-
+// writing  a function to play the game for 5 times
 
 function playGame() {
     humanScore = 0; // Reset scores
